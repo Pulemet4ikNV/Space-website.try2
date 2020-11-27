@@ -1,0 +1,268 @@
+* {box-sizing: border-box}
+@font-face {
+    font-family: 'Long Pixel-7 Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Long Pixel-7 Regular'), url('long_pixel-7.woff') format('woff');
+}
+@media (max-width: 3000px){
+    .factImage{
+        height: 600px;
+        width: 600px;
+    }
+}
+@media (max-width: 1200px){
+    .factImage{
+        height: 500px;
+        width: 500px;
+}
+}
+@media (max-width: 1020px){
+    
+}
+@media (max-width: 650px){
+    textarea{
+        width: 300px;
+    }
+}
+@media (max-width: 550px){
+    
+}
+body{
+    margin: 0;
+}
+.tabcontent {
+    color: white;
+    height: 100%;
+    display: 'none';
+}
+.wrapper{
+    background-color: grey;
+    background-size: 15vw;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    min-height: 70px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.85);
+    
+    justify-content:space-between;
+    align-items:center;
+}
+.header__buttblock{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 35%;
+    margin-left: 20px;
+    /* border: 1px solid magenta; */
+    
+}
+.buttblock__button{
+    background-color: rgb(29, 29, 29);
+    color:yellow;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    border: solid 1px;
+    border-color: yellow;
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:20px;
+}
+.buttblock__button:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.spaceinvader{
+    height:57px;
+    width: 91px;
+    display: inline-block;
+    margin-right: 35%;
+    animation: polet 7s linear infinite alternate;
+    cursor: pointer;
+    background: url(spaceinvader-yellow.png);
+}
+@keyframes polet {
+    from{
+        margin-right: 35%;
+    }
+    to{
+        margin-right: 0%;
+        margin-left: 35%;
+    }
+}
+
+.header__name{
+    display: inline-block;
+    height: 40px;
+    min-width: 270px;
+    /* flex-grow:1; */
+    padding: 0 20px;
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:30px;letter-spacing: 10px;
+    color: yellow;
+    /* border: magenta 1px solid; */
+}
+
+.factblock{
+    display: flex;
+    min-height: 850px;
+    width: 100%;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 0, 0, 0.85);
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+}
+/* .container{
+    display: flex;
+    margin-top: ;
+    border: 1px solid greenyellow;
+    text-align: center;
+} */
+
+.factText{
+    position: relative;
+    display: block; 
+    width: 700px;
+    /* border: 1px solid magenta; */
+    text-align: center;
+    z-index: 1;
+    padding: 30px;
+}
+
+.factText::before{
+    content: '';
+    position: absolute;
+    margin: -20px 0px 0px -20px;
+    display: block;
+    height: 100px;
+    width: 100px;
+    /* border-top: 3px solid ; */
+    /* border-top-color:yellow;
+    border-left: 3px solid ;
+    border-left-color:yellow; */
+}
+.title{
+    color: white;
+}
+.factText::after{
+    content: '';
+    position: absolute;
+    margin: -80px 0px 0px 350px;
+    display: block;
+    height: 100px;
+    width: 100px;
+    /* border-bottom: 3px solid yellow;
+    border-right: 3px solid yellow; */
+}
+.factText h1{
+    position: relative;
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:20px;
+    line-height: 1.5;
+    color: yellow;
+    /* border: 1px solid magenta; */
+}
+.factImage{
+    position: relative;
+    /* border: magenta solid 1px; */
+    padding: 60px;
+}
+.factImage img{
+    border: 1px solid grey;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.factType_1 .factImage{
+    margin-top: 100px;
+    transform: rotate(20deg);
+}
+.factType_1 .factText{
+    margin-bottom: 50px;
+}
+.factType_2 .factImage{
+    margin-bottom: 100px;
+    transform: rotate(-20deg);
+}
+.factType_2 .factText{
+    margin-bottom: 50px;
+}
+.factType_3 .factImage{
+    margin-bottom: 100px;
+    order: 2;
+    padding: 70px;
+    transform: rotate(30deg);
+
+}
+.factType_3 .factText{
+    margin-bottom: 50px;
+    order: 1;
+}
+.basement{
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding: 20px 0;
+}
+.basement textarea{
+    background-color: #000;
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:15px;
+    color: yellow;
+    resize: none;
+}
+.basement span{
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:15px;
+    color: yellow;
+}
+.basement input{
+    height: 40px;
+    min-width: 120px;
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:12px;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid ;
+    border-color: yellow;
+    cursor: pointer;
+}
+.basement a{
+    text-decoration: none;
+    font-family:'Long Pixel-7 Regular';font-weight:bold;font-size:12px;
+    color: yellow;
+}
+.basement__inf{
+    padding: 20px;
+}
+.inf__links{
+    margin: auto auto;
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    
+}
+.links__col{
+    display: inline-block;
+}
+
+#Spacecontnent {background-image: url('https://i.gifer.com/iGu.gif');
+                background-size: 15vw;
+                background-attachment: fixed;}
+#ITcontnent {background-image: url('https://telekritika.ua/tk-static/2018/11/6c38f3c63664299e799e49a389405d0e.gif');
+            background-size: 15vw;
+            background-attachment: fixed;}
+#BIOcontent {background-image: url("https://thumbs.gfycat.com/DeepPlumpIbis-size_restricted.gif");
+            background-size: 100vw;
+            background-attachment: fixed;}
+#Misccontnent {background-image: url('https://thumbs.gfycat.com/SpectacularObviousGordonsetter-max-1mb.gif');
+                background-size: 100vw;
+                background-attachment: fixed;}

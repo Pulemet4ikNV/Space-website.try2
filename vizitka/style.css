@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+body{
+	background: white;
+	background-image: url(background.jpg);	
+	font-family: 'Montserrat Alternates', sans-serif;
+	display: flex;
+	text-align:center;
+}h2{
+	color: yellow;
+	font-size:130%;
+}.container{
+	width: 1000px;
+	height: 969px;
+	background: url(https://cdn.statically.io/img/papers.co/wallpaper/papers.co-vb09-wallpaper-gradient-squares-dark-pattern-35-3840x2160-4k-wallpaper.jpg);
+	margin: 0;
+	opacity: 1;
+}.head{
+	margin-top: 15px;
+	height: 12%;
+	background: black;
+}.title{
+	color: white;
+	height: 200px;
+	font-size: 235%;
+}.content{
+	margin-top:20px;
+	height: 70%;
+	display: flex;
+}.article{
+	margin-top: 40px;
+	margin-left:30px;
+	width: 55%;
+	min-height: 95%;	
+	color: white;
+}
+.ourSite{
+	height: 40px;
+	border: 2px solid yellow;
+	margin-top: 11px;	
+}
+.pic{
+	margin-top: 45px;
+	width: 40%;
+	height: 90%;
+	background: url(https://i.pinimg.com/originals/43/54/3c/43543cea3949e0906c8dd522983cc362.jpg);
+	background-size: cover;
+	
+}.links{
+	height: 12%;
+	border:2px solid yellow;
+	display: flex;
+}.ourLinks{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 55%;
+	width: 429px;
+	background: url(https://fontmeme.com/permalink/200929/13995c470aa356480514158feed18903.png);
+}.linkspics{
+	margin-left: 20px;
+	height: 70%;
+	width: 700px;
+	display: flex;
+}.vkLink{
+	margin-top: 8px;
+	margin-left: 75px;
+	height: 100px;
+	width: 100px;
+	background: url(vk.png);
+	background-size: cover;
+	cursor: pointer;
+}.tgLink{
+	margin-top: 8px;
+	margin-left: 85px;
+	height: 100px;
+	width: 100px;
+	background: url(telegram.png);
+	background-size: cover;
+	cursor: pointer;
+}.webLink{
+	margin-top: 8px;
+	margin-left: 85px;
+	height: 100px;
+	width: 100px;
+	background: url(tweet.png);
+	background-size: cover;
+	cursor: pointer;
+}.pattern{
+	background-image: url(https://r1.ilikewallpaper.net/iphone-xs-max-wallpapers/download/37081/Alien-symbol-dark-pattern-iphone-xs-max-wallpaper-ilikewallpaper_com.jpg);
+	background-size: cover;
+	height: 969px;
+	width: 100px;
+}.rightbigpic{
+	background-image: url(https://avatars.mds.yandex.net/get-zen_doc/50129/pub_599d0e3b4826779bd5d3dcb0_599d0e8777d0e65bb7f65de6/orig);
+	background-size: cover;
+	width: 840px;
+	height:969px;
+}
+.clickable{
+	cursor: pointer;
+}
+
